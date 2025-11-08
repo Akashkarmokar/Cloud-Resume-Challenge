@@ -71,9 +71,9 @@ const Profile = ()=>{
 
     console.log(profileData)
     return (
-        <div className=' main-container flex items-center justify-center '>
-            <div className='h-60 w-60 rounded-full overflow-hidden ring-2 ring-[#ffffff]'>
-                <img src={ProfilePath} loading='lazy' alt="profile"  className='object-cover w-full h-full'/>
+        <div className=' main-container flex flex-wrap items-center justify-center '>
+            <div className='rounded-full overflow-hidden ring-2 ring-[#ffffff]'>
+                <img src={ProfilePath} loading='lazy' alt="profile"  className=''/>
             </div>
             <div className='flex flex-col justify-item-stretch p-5'>
                 <p className='text-center md:text-left'><span className='text-[#00DF9A]'> as </span><span className='font-bold text-3xl'>{ profileData?.name }</span></p>
